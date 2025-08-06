@@ -29,6 +29,7 @@ header {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -58,7 +59,7 @@ header {
 .home-left {
   flex: 1.9; 
   background: url('images/image1 (2).png') no-repeat center center;
-  background-size: cover;
+  background-size: 100vw 100vh;
   position: relative;
 }
 
@@ -206,7 +207,7 @@ body.bgclass{
    color:white;
    font-size:2vw;
    position: relative;
-   left:1300px;
+   left:60%;
 }
 
 form{
