@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style1.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register page-Local Incubator</title>
+    </head>
+    <body class="bgclass">
+        <h1 id="caption" >VOLUNTEER FORM</h1>
+        <a href="index.html" id="back">← Back To Home</a>
+       <form method="post" enctype="multipart/form-data">
+        <table id="register_table">
+              <tr>
+                 <td>Full Name:</td>
+                 <td><input type="text" name="name" required></td>
+              </tr>
+              <tr>
+                  <td>Email:</td>
+                  <td><input type="email" name="email" required></td>
+              </tr>
+              <tr>
+                  <td>Aadhar No:</td>
+                  <td><input type="text" pattern="\d{4}\s\d{4}\s\d{4}" maxlength:14 required></td>
+              </tr>
+               <tr>
+                  <td>Gender:</td>
+                  <td>
+                    <select name="gender" required>
+                       <option value="select">--SELECT--</option>
+                       <option value="male">Male</option>
+                       <option value="female">Female</option>
+                       <option value="others">Others</option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                  <td>Profile Picture (optional):</td>
+                  <td><input type="file" id="image_upload" name="profile_photo" accept="image/*"></td>
+              </tr>
+               <tr>
+                  <td>Contact:</td>
+                  <td><input type="tel" pattern="[0-9]{10}" name="phone" placeholder="Enter 10 digit number"></td>
+               </tr>
+               <tr>
+                  <td>Date Of Birth:</td>
+                  <td><input type="date" name="dob" required></td>
+               </tr>
+               <tr>
+                  <td>User Type:</td>
+                  <td>
+                    <select name="user" required>
+                       <option value="select">--SELECT--</option>
+                       <option value="local">LOCAL / SKILL PROVIDER</option>
+                       <option value="learner">LEARNER / SERVUIUCE REQUESTER</option>
+                       <option value="mentor">MENTORS</option>
+                    </select>
+                </td>
+              </tr>
+               <tr>
+                  <td>About You:</td>
+                  <td>
+                    <textarea name="bio" placeholder="Tell About Your Self" cols="30" rows="6"></textarea>
+                </td>
+               </tr>
+               <tr>
+                  <td><input type="submit" name="sumbit"  value="submit" id="submit" colspan="2"></td>
+               </tr>
+        </table>
+    </form>
+</body>
+</html>

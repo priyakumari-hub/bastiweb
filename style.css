@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#0f1c4d;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.basti {
+  width: 100px;
+  border-radius: 6px;
+}
+
+.nav {
+  display: flex;
+  gap: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: yellow;
+}
+
+/* home */
+
+#Home {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.home-left {
+  flex: 1.9; 
+  background: url('images/image1 (2).png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.home-right {
+  flex: 1;
+  background-color:rgb(122, 206, 245); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+}
+
+.banner-content {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: white;
+}
+
+.headline {
+  font-size: 3.5vw;
+  color: yellow;
+  line-height: 1.2;
+}
+
+.sub-headline {
+  font-size: 3vw;
+  color: #ffe873;
+}
+
+.heading {
+  font-size: 1.4vw;
+  color: #fffca4;
+}
+
+/* Button */
+#button {
+  width: 12vw;
+  height: 6vh;
+  font-size: 1.2vw;
+  background: linear-gradient(to right, orangered, #ff7033);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff7033, orangered);
+}
+
+/* about us */
+
+#About {
+  padding: 5rem 10vw;
+  background-color: #fff;
+  color: #10234a;
+}
+
+#About h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  border-left: 6px solid orangered;
+  padding-left: 1rem;
+}
+
+.about-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#About h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #d63333;
+}
+
+.about-content ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+}
+
+.about-content a {
+  color: orangered;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #10234a;
+  color: white;
+  padding: 2rem 10vw;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: yellow;
+}
+
+footer p,.copyright{
+  font-size: 1.5rem;
+  line-height: 3;
+}
+
+
+/*Register form*/
+
+body.bgclass{
+   background-color:rgb(122, 206, 245);
+   background-image: none;
+}
+
+#caption
+{
+    text-align: center;
+    font-size:8vh;
+    margin-bottom:1rem;
+    color:midnightblue;
+}
+
+#back{
+   color:white;
+   font-size:2vw;
+   position: relative;
+   left:1300px;
+}
+
+form{
+    box-shadow:0px 0px 20px rgba(0,0,0,1);
+    width:100%;  
+    max-width:800px;
+    height:auto;
+    margin:5vh auto;
+    padding: 3vh 4vw;
+    background-color:#f3e49b;
+    color:#4a3f35;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width:100%;
+    box-sizing: border-box;
+}
+
+
+td{
+  font-size:3vh;
+  padding:1vh 0; 
+}
+
+input{
+    height:5vh;
+    width:80%;
+    padding:0.8rem;
+    border: none;
+}
+
+select{
+    height:5vh;
+    width:80%;   
+}
+
+input[type="file"]
+{
+ height:3rem;
+}
+
+#submit
+{
+    width:70%;
+    height:6vh;
+    text-align:center;
+    font-size: 1rem;
+    margin-top: 2vh;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color:rgb(243, 117, 71) ;
+    color:black;
+  }
+
+  #submit:hover{
+    background-color: red;
+    color:yellow;
+  }
+
